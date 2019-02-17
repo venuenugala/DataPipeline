@@ -72,6 +72,8 @@ object GetStreamingTweetsTraffic {
       }
 
     })(encoder)
+	
+	System.out.println("Saving to HBase")
 
     //Foreach Writer to store in HBase
     val writer = new ForeachWriter[Row] {
